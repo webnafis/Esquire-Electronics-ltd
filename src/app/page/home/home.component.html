@@ -1,0 +1,15 @@
+<div class="banner-section">
+    <div class="sub-container ">
+        <div class="banner-flex">
+
+            <app-categories />
+            <app-banner-slider [Banners]="bannersForSlider" />
+        </div>
+        <app-banner [BannerLink]="bannerTop" [BannerName]="'banner'" [margin]="'10px'" />
+    </div>
+</div>
+<div class="main-container">
+    <div class="sub-container">
+        <app-features [features]="features" />
+    </div>
+</div>

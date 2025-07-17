@@ -1,0 +1,23 @@
+ul {
+    width: 285px;
+    padding-left: 5px;
+
+
+    li {
+        padding: 5px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 280px;
+        height: 33px;
+        color: #9E9E9E;
+
+        svg {
+            width: 15px;
+            height: 15px;
+            fill: #9E9E9E;
+            stroke: #9E9E9E;
+            margin: 2px 6px;
+        }
+    }
+}

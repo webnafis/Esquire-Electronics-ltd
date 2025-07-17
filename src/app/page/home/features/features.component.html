@@ -1,0 +1,6 @@
+<div class="container">
+    <div *ngFor="let feature of features; let i =index;" class="feature-card">
+        <img [src]="feature.link" [alt]="feature.name">
+        <p>{{feature.name}}</p>
+    </div>
+</div>
