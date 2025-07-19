@@ -1,3 +1,44 @@
+.conTop {
+    &.hidden {
+
+        display: none;
+    }
+}
+
+.padding {
+    min-width: 100%;
+    padding-top: 133.5px;
+    display: none;
+
+    &.visible-padding {
+        display: block;
+    }
+}
+
+
+.conScroll {
+    position: fixed;
+    top: -133.5px;
+    /* Same as height */
+    left: 0;
+    min-width: 100%;
+    height: 133.5px;
+    /* Adjust as needed */
+    // background: #ffffff;
+    // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: transform 0.3s ease-out;
+
+    &.visible {
+        transform: translateY(133.5px);
+        /* Same as height */
+    }
+
+    &:not(.visible) {
+        transition: none !important;
+    }
+}
+
 .main-container-1 {
     min-width: 100%;
     padding: 0px 10px;
@@ -28,7 +69,7 @@
         color: #5c5c5c;
 
         li {
-            display: inline-block;
+            // display: inline-block;
             font-size: 16px;
             cursor: pointer;
             text-align: center;
@@ -46,30 +87,49 @@
             position: relative;
 
             .dropdown-menu {
-
+                opacity: 0;
+                transform: translateZ(-10px); // Initial offset
+                transition: all 0.15s ease-out; // Reduced from 3s to 0.3s for better UX
                 position: absolute;
                 top: 100%;
                 left: 0;
                 background-color: #fff;
                 list-style: none;
-                margin: 10px;
+                margin: 15px;
                 padding: 10px 0;
-                width: fit-content;
-                border-radius: 6px;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+                min-width: fit-content;
+                max-width: 100%;
+                border-radius: 5px;
+                box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.15);
                 z-index: 1000;
+                // Remove display: none
+                visibility: hidden; // Use visibility instead of display
+                pointer-events: none; // Disable pointer events when hidden
 
                 button {
-                    display: inline-block;
+                    text-align: left;
+                    text-wrap: nowrap;
+                    min-width: 100%;
+                    min-height: 48px;
                     background-color: #fff;
                     border: none;
-                    padding: 8px 16px;
+                    font-size: 16px;
+                    padding: 0px 16px;
                     cursor: pointer;
+                    color: #353535;
 
                     &:hover {
-                        background-color: #f2f2f2;
+                        background-color: rgba(0, 0, 0, .04);
                     }
                 }
+            }
+
+            .show {
+                // Remove display: block
+                opacity: 1;
+                transform: translateZ(0); // Final position
+                visibility: visible; // Make it visible
+                pointer-events: auto; // Enable pointer events
             }
 
             .call {
@@ -96,9 +156,10 @@
             justify-content: center;
             width: 100%;
             padding: 0px 20px;
+            position: relative;
 
 
-            input {
+            .form-input {
                 background-color: #f5f5f5;
                 font-size: 16px;
                 height: 40px;
@@ -110,12 +171,47 @@
                 width: 100%;
                 border-top-left-radius: 5px;
                 border-bottom-left-radius: 5px;
+                position: relative;
+                // z-index: 2;
 
-                &::placeholder {}
+                &:focus+.placeholder-container {
+                    display: none;
+                }
+
+
+            }
+
+            .placeholder-container {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                color: #999;
+                pointer-events: none;
+                display: flex;
+                align-items: center;
+            }
+
+            .cursor {
+                &.blinking {
+                    animation: blink 1s infinite;
+                }
+            }
+
+            @keyframes blink {
+
+                0%,
+                100% {
+                    opacity: 1
+                }
+
+                50% {
+                    opacity: 0
+                }
             }
 
             button {
                 height: 40px;
+                min-width: 55px;
                 width: 55px;
                 background-color: #b60201;
                 cursor: pointer;
@@ -128,8 +224,8 @@
                 border-bottom-right-radius: 5px;
 
                 svg {
-                    width: 20px;
-                    height: 20px;
+                    width: 18px;
+                    height: 19px;
                     stroke: #fff;
                     fill: #fff;
                 }
@@ -146,7 +242,27 @@
 
         .app {
             height: auto;
-            width: 225px;
+            width: 222px;
+        }
+
+    }
+}
+
+.conScroll {
+    .main-container-2 {
+        background-color: #b60201;
+
+        .second-section {
+            .search {
+                button {
+                    background-color: #fff;
+
+                    svg {
+                        fill: #b60201;
+                        stroke: #b60201;
+                    }
+                }
+            }
         }
 
     }

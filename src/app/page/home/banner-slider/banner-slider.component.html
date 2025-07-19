@@ -16,7 +16,7 @@
         </svg>
     </div>
     <div class="dots-con">
-        <!-- <div class="dot"></div> -->
+        <div class="dot" [class.active-dot]="true"></div>
         <div *ngFor="let bannerNumber of Banners; let i = index" class="dot"></div>
     </div>
 

@@ -22,10 +22,16 @@
             width: 11px;
             height: 11px;
             border: 1px solid #B3B3B3;
-            opacity: 0.2;
             border-radius: 50%;
             background-color: #fff;
+            opacity: 0.2;
             cursor: pointer;
+        }
+
+        .active-dot {
+            background-color: #B60201;
+            opacity: 1;
+            border-color: #B60201;
         }
     }
 

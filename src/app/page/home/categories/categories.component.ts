@@ -12,28 +12,32 @@ export class CategoriesComponent {
       subcategories: ["subcategory1", "subcategory2", "subcategory3", "subcategory4", "subcategory5"]
     },
     {
-      name: "category name",
+      name: "Category Name",
       subcategories: ["subcategory1", "subcategory2", "subcategory3", "subcategory4", "subcategory5"]
     },
     {
-      name: "category name",
+      name: "Category Name",
       subcategories: ["subcategory1", "subcategory2", "subcategory3", "subcategory4", "subcategory5"]
     },
     {
-      name: "category name",
+      name: "Category Name",
       subcategories: ["subcategory1", "subcategory2", "subcategory3", "subcategory4", "subcategory5"]
     },
     {
-      name: "category name",
+      name: "Category Name",
       subcategories: ["subcategory1", "subcategory2", "subcategory3", "subcategory4", "subcategory5"]
     },
     {
-      name: "category name",
+      name: "Category Name",
       subcategories: ["subcategory1", "subcategory2", "subcategory3", "subcategory4", "subcategory5"]
     },
     {
-      name: "category name",
+      name: "Category Name",
       subcategories: ["subcategory1", "subcategory2", "subcategory3", "subcategory4", "subcategory5"]
+    },
+    {
+      name: "See All",
+      subcategories: [],
     }
   ];
 }
