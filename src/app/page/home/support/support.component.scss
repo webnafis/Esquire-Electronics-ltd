@@ -1,0 +1,16 @@
+     .container-products {
+         min-width: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: flex-start;
+         gap: 10px;
+         margin-top: 10px;
+         padding: 5px 0px 15px;
+
+         .products-card {
+             flex: 1 1 calc(16.66666% - 8.33333px);
+             max-width: calc(16.66666% - 8.33333px);
+
+
+         }
+     }

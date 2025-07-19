@@ -11,5 +11,18 @@
 <div class="main-container">
     <div class="sub-container">
         <app-features [features]="features" />
+        <app-fest />
+
+        <div class="category-con">
+            <ng-container *ngFor="let category_db of catrgory_section_db; let i = index;">
+                <app-category-section [category]="category_db" />
+            </ng-container>
+        </div>
+
+        <app-banner [BannerLink]="bannerYoutube" [BannerName]="'banner-videos'" [margin]="'10px'" />
+        <app-banner [BannerLink]="bannerSupport" [BannerName]="'banner-support'" [margin]="'10px'" />
+        <app-support />
+        <app-banner [BannerLink]="bannerBlog" [BannerName]="'banner-blog'" [margin]="'10px'" />
+        <app-blogs-container />
     </div>
 </div>

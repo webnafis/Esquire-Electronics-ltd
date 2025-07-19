@@ -1,1 +1,39 @@
-<p>fest works!</p>
+<div class="container">
+    <div class="title-area">
+        <div class="title-timer">
+            <h1>
+                Esquire Monsoon Fest 2025
+            </h1>
+            <div class="timer-container">
+                <h3>
+                    Ending in
+                </h3>
+                <div class="show-time">
+                    <span>13</span>
+                    <small>Days</small>
+                </div>
+                <div class="show-time">
+                    <span>12</span>
+                    <small>Hours</small>
+                </div>
+                <div class="show-time">
+                    <span>17</span>
+                    <small>Mins</small>
+                </div>
+                <div class="show-time no-colon">
+                    <span>11</span>
+                    <small>Sec</small>
+                </div>
+            </div>
+        </div>
+        <a href="">VIEW OFFER</a>
+    </div>
+    <div class="container-products">
+
+        <div *ngFor="let product of Fest_products; let i = index" class="products-card">
+
+            <app-product-card [product]="product" />
+        </div>
+
+    </div>
+</div>

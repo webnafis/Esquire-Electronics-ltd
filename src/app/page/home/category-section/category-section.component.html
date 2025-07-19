@@ -1,1 +1,12 @@
-<p>category-section works!</p>
+<div class="container">
+    <app-banner [BannerLink]="category.BannerLink" [BannerName]="'category.name'" [margin]="'0px'" />
+    <div class="second-container">
+        <div class="side-banner">
+            <img [src]="category.SideBannerLink" [alt]="category.name">
+        </div>
+        <div class="products-component-con">
+
+            <app-products-container [products]="category.products" />
+        </div>
+    </div>
+</div>

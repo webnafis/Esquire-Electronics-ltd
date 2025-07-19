@@ -12,11 +12,13 @@ import { CategorySectionComponent } from './category-section/category-section.co
 import { FeaturesComponent } from './features/features.component';
 import { FestComponent } from './fest/fest.component';
 import { ProductsContainerComponent } from './products-container/products-container.component';
-import { SideBannerComponent } from './side-banner/side-banner.component';
+import { ProductCardComponent } from "../../shared/product-card/product-card.component";
+import { SupportComponent } from './support/support.component';
 
 
 @NgModule({
   declarations: [
+    SupportComponent,
     HomeComponent,
     BannerComponent,
     BannerSliderComponent,
@@ -27,11 +29,12 @@ import { SideBannerComponent } from './side-banner/side-banner.component';
     FeaturesComponent,
     FestComponent,
     ProductsContainerComponent,
-    SideBannerComponent
+
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    ProductCardComponent
   ]
 })
 export class HomeModule { }
