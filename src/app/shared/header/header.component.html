@@ -48,10 +48,7 @@
                     class="logo">
                 <div class="search">
                     <input type="text" class="form-input">
-                    <div class="placeholder-container">
-                        <span class="animated-text">{{displayedText}}</span>
-                        <span class="cursor" [class.blinking]="!isDeleting">|</span>
-                    </div>
+
                     <button><svg xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
                             <path
@@ -112,11 +109,7 @@
                 <img src="https://www.esquireelectronicsltd.com/assets/images/brand/logo/Logo-with-text-white.png"
                     alt="" class="logo">
                 <div class="search">
-                    <input type="text" class="form-input" (focus)="onFocus()" (blur)="onBlur()" [value]="displayedText">
-                    <div class="placeholder-container" *ngIf="!isFocused && !displayedText">
-                        <span class="animated-text">{{displayedText}}</span>
-                        <span class="cursor" [class.blinking]="!isDeleting">|</span>
-                    </div>
+                    <input type="text" class="form-input" [placeholder]="'Search products....'">
                     <button><svg xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
                             <path
