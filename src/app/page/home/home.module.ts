@@ -14,6 +14,7 @@ import { FestComponent } from './fest/fest.component';
 import { ProductsContainerComponent } from './products-container/products-container.component';
 import { ProductCardComponent } from "../../shared/product-card/product-card.component";
 import { SupportComponent } from './support/support.component';
+import { VideoSectionComponent } from "./video-section/video-section.component";
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { SupportComponent } from './support/support.component';
   imports: [
     CommonModule,
     HomeRoutingModule,
-    ProductCardComponent
+    ProductCardComponent,
+    VideoSectionComponent
   ]
 })
 export class HomeModule { }
