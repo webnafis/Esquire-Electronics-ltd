@@ -19,6 +19,7 @@ import { VideoSectionComponent } from "./video-section/video-section.component";
 
 @NgModule({
   declarations: [
+    VideoSectionComponent,
     SupportComponent,
     HomeComponent,
     BannerComponent,
@@ -36,7 +37,6 @@ import { VideoSectionComponent } from "./video-section/video-section.component";
     CommonModule,
     HomeRoutingModule,
     ProductCardComponent,
-    VideoSectionComponent
   ]
 })
 export class HomeModule { }

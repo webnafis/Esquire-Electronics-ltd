@@ -1,1 +1,7 @@
-<p>video-section works!</p>
+<div class="container">
+    <div class="card" *ngFor="let video of videos; let i = index;">
+        <img class="img" [src]="video.imgLink" alt="">
+        <img class="icon" src="https://www.esquireelectronicsltd.com/assets/images/brand/icon/play.svg" alt=""
+            class="icon">
+    </div>
+</div>

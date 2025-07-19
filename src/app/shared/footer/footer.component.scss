@@ -1,0 +1,143 @@
+.main-container {
+    min-width: 100%;
+    padding: 5px 10px;
+
+    background-color: #333333;
+}
+
+.sub-container {
+    max-width: 1180px;
+    margin: auto;
+    padding: 50px 0px 0px;
+
+}
+
+.footer-main {
+    max-width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+
+    .c {
+        margin-bottom: 20px;
+    }
+
+
+    .card1 {
+        flex: 1 1 calc(23.529% - 18.8235px);
+        min-width: calc(23.529% - 18.8235px);
+
+        h4 {
+            color: #fff;
+            font-weight: 400;
+            // font-family: Calibri, sans-serif;
+            font-size: 13px;
+            font-style: normal;
+            line-height: 25px;
+        }
+
+        h3 {
+            color: #fff;
+            font-weight: 400;
+            // font-family: Calibri, sans-serif;
+            font-size: 13px;
+            font-style: normal;
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+
+                &:hover {
+                    color: #f2ba22;
+                }
+            }
+        }
+
+        span {
+            display: block;
+            color: #fff;
+            font-weight: 400;
+            font-family: Calibri, sans-serif;
+            font-size: 13px;
+            font-style: normal;
+            padding-bottom: 2px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .card2,
+    .card3,
+    .card4 {
+        flex: 1 1 calc(17.647% - 14.1176px);
+        min-width: calc(17.647% - 14.1176px);
+
+        h2 {
+            color: #f2ba22;
+            font-weight: 500;
+            font-family: Calibri, sans-serif;
+            font-style: normal;
+            font-size: 14px;
+            display: block;
+            line-height: 25px;
+            margin-bottom: 7px;
+            max-width: 100%;
+            width: 100%;
+            text-align: left;
+
+        }
+
+        p {
+            display: block;
+            margin-bottom: 7px;
+            text-align: left;
+            color: #fff;
+            font-size: 13px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+    }
+
+
+
+    .card5 {
+        flex: 1 1 calc(23.529% - 18.8235px);
+        min-width: calc(23.529% - 18.8235px);
+
+        h2 {
+            color: #f2ba22;
+            font-weight: 500;
+            font-family: Calibri, sans-serif;
+            font-style: normal;
+            font-size: 14px;
+            display: block;
+            line-height: 25px;
+            margin-bottom: 7px;
+            max-width: 100%;
+            width: 100%;
+            text-align: left;
+
+        }
+    }
+
+}
+
+
+@media screen and (max-width:1200px) {
+    .sub-container {
+        max-width: 942px;
+    }
+
+}
+
+@media screen and (max-width:990px) {
+    .sub-container {
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .sub-container {
+        max-width: 520px;
+    }
+}
