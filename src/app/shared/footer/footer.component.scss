@@ -47,12 +47,16 @@
             a {
                 display: inline-block;
                 text-decoration: none;
+                color: #fff;
+                transition: all 0.3s linear;
 
                 &:hover {
                     color: #f2ba22;
                 }
             }
         }
+
+
 
         span {
             display: block;
@@ -117,6 +121,94 @@
             width: 100%;
             text-align: left;
 
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 10px;
+            gap: 10px;
+            list-style: none;
+
+            li {
+                padding-right: 3px;
+                display: block;
+
+                img {
+                    display: block;
+                    height: 22px;
+                    width: 22px;
+                }
+            }
+
+        }
+
+        .app {
+            ont-weight: 500;
+            // font-style: normal;
+            // font-family: Calibri, sans-serif;
+            color: #fff;
+            font-size: 15px;
+            display: block;
+            line-height: 22px;
+        }
+
+        .sign-h2 {
+            font-weight: 500;
+            // font-style: normal;
+            // font-family: Calibri, sans-serif;
+            color: #d6bbbb;
+            font-size: 15px;
+            display: block;
+            line-height: 22px;
+        }
+
+        label {
+            color: #fff;
+            font-weight: 400;
+            // font-family: Calibri, sans-serif;
+            font-size: 13px;
+            font-style: normal;
+            display: block;
+            line-height: 17px;
+            margin-bottom: 3px;
+        }
+
+        .input-con {
+            input {
+                display: block;
+                width: 100%;
+                border: 1px solid #fff;
+                outline: none;
+                padding: 8px 10px;
+                // box-sizing: border-box;
+                color: #524f39;
+                // font-family: Calibri, sans-serif;
+                // font-style: normal;
+                border-radius: 7px;
+            }
+
+            button {
+                display: block;
+                max-width: 50px;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: #fff;
+                border: 1px solid transparent;
+                outline: none;
+            }
+        }
+
+        .app-ul {
+            gap: 7px;
+
+            li {
+                padding-right: 0px;
+            }
         }
     }
 
