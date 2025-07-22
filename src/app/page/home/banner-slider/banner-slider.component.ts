@@ -13,7 +13,7 @@ export class BannerSliderComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     // Register Swiper custom elements
-    register();
+    // register();
 
     // Initialize Swiper
     const swiperEl = document.querySelector('.container') as SwiperContainer;

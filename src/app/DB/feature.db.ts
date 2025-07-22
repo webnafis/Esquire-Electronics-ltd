@@ -19,8 +19,21 @@ export const FEATURE_DB: any[] = [
         link: "https://api.ecommerce.esquireelectronicsltd.com/api/upload/images/5-c655.webp?resolution=500_500",
         name: "Contact Us"
     },
+
     {
         link: "https://api.ecommerce.esquireelectronicsltd.com/api/upload/images/3-9d46.webp?resolution=500_500",
         name: "FAQ"
-    }
+    },
+    {
+        link: "https://api.ecommerce.esquireelectronicsltd.com/api/upload/images/3-9d46.webp?resolution=500_500",
+        name: "FAQ"
+    },
+    {
+        link: "https://api.ecommerce.esquireelectronicsltd.com/api/upload/images/3-9d46.webp?resolution=500_500",
+        name: "FAQ"
+    },
+    {
+        link: "https://api.ecommerce.esquireelectronicsltd.com/api/upload/images/3-9d46.webp?resolution=500_500",
+        name: "FAQ"
+    },
 ];

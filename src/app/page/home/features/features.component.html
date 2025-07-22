@@ -1,6 +1,10 @@
-<div class="container">
-    <div *ngFor="let feature of features; let i =index;" class="feature-card">
-        <img [src]="feature.link" [alt]="feature.name">
-        <p>{{feature.name}}</p>
-    </div>
+<div class="cintainer-main">
+
+    <swiper-container class="container-feature " navigation="false" pagination="false" slides-per-view="6"
+        scrollbar="false" init="false">
+        <swiper-slide *ngFor="let feature of features; let i =index;" class="feature-card">
+            <img [src]="feature.link" [alt]="feature.name">
+            <p>{{feature.name}}</p>
+        </swiper-slide>
+    </swiper-container>
 </div>
