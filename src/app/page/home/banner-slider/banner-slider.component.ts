@@ -38,13 +38,13 @@ export class BannerSliderComponent implements AfterViewInit {
         // cursor: pointer;
         opacity: 0.2;
         background: #fff;
-        border: 1px solid #B3B3B3;
+        // border: 1px solid #B3B3B3;
       }
 
       .swiper-pagination-bullet-active {
         // color: #fff;
         background: #B60201;
-        border-color: #B60201;
+        // border-color: #B60201;
         opacity: 1;
       }
       `],
