@@ -1,13 +1,19 @@
 .container-products {
+    max-width: 925.11px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 5px;
     margin-top: 10px;
-    padding: 10px 0px;
     position: relative;
 
-    .svg {
+    .swiper-container-products {
+        max-width: 925.11px;
+
+    }
+
+    .first,
+    .last {
         cursor: pointer;
         position: absolute;
         // border: 1px solid black;
@@ -24,8 +30,8 @@
         z-index: 660;
         //   border-radius: 50%;
         transition: all .3s linear;
-        visibility: hidden;
-        opacity: 0;
+        opacity: 1;
+        transition: 0.5s ease-in-out;
         box-shadow: 0 15px 35px #0000001a;
         text-shadow: 2px 3px 8px rgba(0, 0, 0, .1);
 
@@ -46,6 +52,11 @@
             }
         }
 
+        &[aria-disabled="true"] {
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.5s ease-in-out;
+        }
     }
 
     .first {
@@ -57,18 +68,30 @@
         // background-color: #2c2c2c;
     }
 
-    &:hover {
-        .svg {
+    // .swiper-button-disabled {
+    //     visibility: hidden;
+    //     opacity: 0;
+    //     transition: 0.5s ease-in-out;
+    // }
 
-            visibility: visible;
-            opacity: 1;
-        }
-    }
+    // &:hover {
+
+    //     .first,
+    //     .last {
+
+    //         visibility: visible;
+    //         opacity: 1;
+    //     }
+    // }
 
     .products-card {
         flex: 1 1 calc(25% - 3.75px);
         max-width: calc(25% - 3.75px);
+        min-width: calc(25% - 3.75px);
+
         transition: all .5s ease;
+
+        margin: 10px 0px;
 
         &:hover {
             box-shadow: 0 0 10px #77373262;

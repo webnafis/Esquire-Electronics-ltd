@@ -28,4 +28,9 @@ export class HomeComponent {
   public bannerYoutube: string = "https://api.ecommerce.esquireelectronicsltd.com/api/upload/images/whatsapp-image-2025-01-11-at-2-9aed.webp?resolution=1391_180";
   public bannerSupport: string = "https://api.ecommerce.esquireelectronicsltd.com/api/upload/images/usp-banner-8e98.webp?resolution=1489_232";
   public bannerBlog: string = "https://api.ecommerce.esquireelectronicsltd.com/api/upload/images/blog-dextop-49aa.webp?resolution=1397_180";
+
+
+  public trackByFn(index: number, item: any): string {
+    return `${index}-${item.id}`; // Or any unique identifier
+  }
 }

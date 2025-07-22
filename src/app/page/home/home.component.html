@@ -14,8 +14,8 @@
         <app-fest />
 
         <div class="category-con">
-            <ng-container *ngFor="let category_db of catrgory_section_db; let i = index;">
-                <app-category-section [category]="category_db" />
+            <ng-container *ngFor="let category_db of catrgory_section_db; let i = index; trackBy: trackByFn">
+                <app-category-section [category]="category_db" [index]="i" />
             </ng-container>
         </div>
 
