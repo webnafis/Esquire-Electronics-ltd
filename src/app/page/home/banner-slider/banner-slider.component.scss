@@ -1,41 +1,18 @@
-.container {
+.container-main {
     display: block;
     width: 875px;
     height: auto;
     position: relative;
 
+    .container {
+        display: block;
+        width: 875px;
+        height: auto;
 
-    .dots-con {
-        // display: inline-block;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 4px;
-        // width: 30px;
-        position: absolute;
-        z-index: 660;
-        bottom: 10px;
-        left: calc(50% - 15px);
-        // background-color: #020025;
-
-        .dot {
-            width: 11px;
-            height: 11px;
-            border: 1px solid #B3B3B3;
-            border-radius: 50%;
-            background-color: #fff;
-            opacity: 0.2;
-            cursor: pointer;
-        }
-
-        .active-dot {
-            background-color: #B60201;
-            opacity: 1;
-            border-color: #B60201;
-        }
     }
 
-    .svg {
+    .first,
+    .last {
         position: absolute;
         // border: 1px solid black;
         border-radius: 50%;
@@ -55,6 +32,7 @@
         opacity: 0;
         box-shadow: 0 15px 35px #0000001a;
         text-shadow: 2px 3px 8px rgba(0, 0, 0, .1);
+        cursor: pointer;
 
         svg {
             stroke: #B60201;
@@ -84,7 +62,9 @@
     }
 
     &:hover {
-        .svg {
+
+        .first,
+        .last {
 
             visibility: visible;
             opacity: 1;
@@ -92,8 +72,10 @@
     }
 }
 
+
 img {
     display: block;
     width: 875px;
     height: auto;
+    cursor: pointer;
 }

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
@@ -15,7 +15,9 @@ import { ProductsContainerComponent } from './products-container/products-contai
 import { ProductCardComponent } from "../../shared/product-card/product-card.component";
 import { SupportComponent } from './support/support.component';
 import { VideoSectionComponent } from "./video-section/video-section.component";
+import { register as registerSwiperElement } from 'swiper/element/bundle';
 
+registerSwiperElement();
 
 @NgModule({
   declarations: [
@@ -37,6 +39,7 @@ import { VideoSectionComponent } from "./video-section/video-section.component";
     CommonModule,
     HomeRoutingModule,
     ProductCardComponent,
-  ]
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class HomeModule { }
