@@ -1,12 +1,14 @@
 .container-main {
     display: block;
-    width: 875px;
+    min-width: 100%;
+    max-width: 100%;
     height: auto;
     position: relative;
 
     .container {
         display: block;
-        width: 875px;
+        min-width: 100%;
+        max-width: 100%;
         height: auto;
 
     }
@@ -75,7 +77,9 @@
 
 img {
     display: block;
-    width: 875px;
+    // width: 875px;
+    min-width: 100%;
+    max-width: 100%;
     height: auto;
     cursor: pointer;
 }

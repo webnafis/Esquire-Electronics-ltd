@@ -30,7 +30,7 @@
     transition: transform 0.3s ease-out;
 
     &.visible {
-        transform: translateY(133.5px);
+        transform: translateY(133px);
         /* Same as height */
     }
 
@@ -238,14 +238,35 @@
 
 @media screen and (max-width:1200px) {
     .sub-container {
-        max-width: 942px;
+        max-width: 960px;
+
+        .second-section {
+            .logo {
+                max-width: 229.8px;
+            }
+
+            .app {
+                max-width: 178px;
+            }
+        }
     }
 
 }
 
 @media screen and (max-width:990px) {
     .sub-container {
-        max-width: 700px;
+        max-width: 720px;
+
+
+        .second-section {
+            .logo {
+                max-width: 168.59px;
+            }
+
+            .app {
+                max-width: 130px;
+            }
+        }
     }
 }
 
@@ -255,6 +276,6 @@
             display: none;
         }
 
-        max-width: 520px;
+        max-width: 540px;
     }
 }

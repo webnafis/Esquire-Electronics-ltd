@@ -71,13 +71,13 @@ export class VideoSectionComponent implements AfterViewInit {
         nextEl: `.first-video`,
         prevEl: `.last-video`,
       },
-      // breakpoints: {
-      //   // 320: { slidesPerView: 1, spaceBetween: 10 },
-      //   // 640: { slidesPerView: 2, spaceBetween: 15 },
-      //   // 770: { slidesPerView: 3, spaceBetween: 20 },
-      //   990: { slidesPerView: 4, spaceBetween: 25 },
-      //   1200: { slidesPerView: 4, spaceBetween: 20 }
-      // },
+      breakpoints: {
+        // 320: { slidesPerView: 1, spaceBetween: 10 },
+        // 640: { slidesPerView: 2, spaceBetween: 15 },
+        // 770: { slidesPerView: 3, spaceBetween: 20 },
+        990: { slidesPerView: 4, spaceBetween: 20 },
+        1200: { slidesPerView: 5, spaceBetween: 20 }
+      },
       on: {
         init() {
           // Additional initialization if needed

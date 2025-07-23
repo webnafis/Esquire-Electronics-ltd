@@ -1,5 +1,6 @@
 .main-ul {
-    width: 285px;
+    min-width: 100%;
+    max-width: 100%;
     padding-left: 5px;
     position: relative;
 
@@ -9,7 +10,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 280px;
+        min-width: calc(100% - 5px);
+        max-width: calc(100% - 5px);
         height: 33px;
         color: #9E9E9E;
         // position: relative;
@@ -26,6 +28,7 @@
 
             position: absolute;
             left: 105%;
+            min-height: 100%;
             height: auto;
             top: 0%;
             max-width: fit-content;
@@ -39,8 +42,11 @@
             // box-sizing: border-box;
             .sub-category-main {
                 width: 500px;
-                height: 500%;
-                min-height: 314px;
+                min-height: 100%;
+                height: auto;
+
+
+                // min-height: 314px;
 
                 // background-color: #b60201;
 
@@ -97,3 +103,18 @@
         }
     }
 }
+
+
+@media screen and (max-width:1200px) {
+    .main-ul {
+        .main-li {
+            padding: 2px 0px;
+            height: 27px;
+        }
+    }
+
+}
+
+@media screen and (max-width:990px) {}
+
+@media screen and (max-width:770px) {}

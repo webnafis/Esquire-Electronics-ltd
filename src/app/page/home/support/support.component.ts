@@ -22,7 +22,7 @@ export class SupportComponent implements AfterViewInit {
     if (!swiperElSupport) return;
     const swiperParamsSupport: SwiperOptions = {
       loop: false,
-      slidesPerView: 6,
+      slidesPerView: 2,
       spaceBetween: 10,
       speed: 600, // Transition duration in ms (400-800 is smooth)
       effect: 'slide', // Use 'fade' for fade transitions
@@ -39,8 +39,8 @@ export class SupportComponent implements AfterViewInit {
         // 320: { slidesPerView: 1, spaceBetween: 10 },
         // 640: { slidesPerView: 2, spaceBetween: 15 },
         // 770: { slidesPerView: 3, spaceBetween: 20 },
-        // 990: { slidesPerView: 4, spaceBetween: 25 },
-        // 1200: { slidesPerView: 4, spaceBetween: 20 }
+        990: { slidesPerView: 5, spaceBetween: 10 },
+        1200: { slidesPerView: 6, spaceBetween: 10 }
       },
       on: {
         init() {

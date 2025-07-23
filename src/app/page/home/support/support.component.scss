@@ -78,3 +78,19 @@
 
     }
 }
+
+
+@media screen and (max-width:1200px) {
+    .container-products-support {
+        .products-card {
+            flex: 1 1 calc(20% - 8px);
+            min-width: calc(20% - 8px);
+            max-width: calc(20% - 8px);
+        }
+    }
+
+}
+
+@media screen and (max-width:990px) {}
+
+@media screen and (max-width:770px) {}
