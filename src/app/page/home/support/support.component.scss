@@ -1,16 +1,79 @@
-     .container-products {
-         min-width: 100%;
-         display: flex;
-         align-items: center;
-         justify-content: flex-start;
-         gap: 10px;
-         margin-top: 10px;
-         padding: 5px 0px 15px;
+.container-products-support {
+    min-width: 1180px;
+    max-width: 1180px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 5px 0px 15px;
+    position: relative;
 
-         .products-card {
-             flex: 1 1 calc(16.66666% - 8.33333px);
-             max-width: calc(16.66666% - 8.33333px);
+    .swiper-container-supports {
+        min-width: 100%;
+        max-width: 100%;
+    }
 
+    .first,
+    .last {
+        cursor: pointer;
+        position: absolute;
+        // border: 1px solid black;
+        border-radius: 50%;
+        top: calc(50% - 0px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // box-shadow: 4px 4px 15px 4px rgba(134, 134, 134, 0.2);
+        background-color: #fff;
+        width: 45px;
+        height: 45px;
+        transform: translateY(-50%);
+        z-index: 660;
+        //   border-radius: 50%;
+        transition: all .3s linear;
+        opacity: 1;
+        transition: 0.5s ease-in-out;
+        box-shadow: 0 15px 35px #0000001a;
+        text-shadow: 2px 3px 8px rgba(0, 0, 0, .1);
 
-         }
-     }
+        svg {
+            transition: all .3s linear;
+            stroke: #c92127;
+            fill: #c92127;
+            width: 25px;
+            height: 25px;
+        }
+
+        &:hover {
+            background-color: #B60201;
+
+            svg {
+                stroke: #fff;
+                fill: #fff;
+            }
+        }
+
+        &[aria-disabled="true"] {
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.5s ease-in-out;
+        }
+    }
+
+    .first {
+        right: 10px;
+    }
+
+    .last {
+        left: 10px;
+        // background-color: #2c2c2c;
+    }
+
+    .products-card {
+        flex: 1 1 calc(16.66666% - 8.33333px);
+        min-width: calc(16.66666% - 8.33333px);
+        max-width: 188.33px;
+
+    }
+}
