@@ -101,3 +101,18 @@
         }
     }
 }
+
+
+
+
+@media screen and (max-width:990px) {
+    .container-products {
+        .products-card {
+            flex: 1 1 calc(33.333% - 3.333px);
+            max-width: calc(33.333% - 3.333px);
+            min-width: calc(33.333% - 3.333px);
+        }
+    }
+}
+
+@media screen and (max-width:770px) {}

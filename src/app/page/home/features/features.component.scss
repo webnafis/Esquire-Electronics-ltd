@@ -7,7 +7,8 @@
      justify-content: space-between;
 
      .feature-card {
-         width: 180px;
+         min-width: 180px;
+         max-width: 180px;
          height: 119px;
          display: flex;
          align-items: center;
@@ -44,3 +45,17 @@
          }
      }
  }
+
+
+ @media screen and (max-width:990px) {
+     .container-feature {
+         gap: 15px;
+
+         .feature-card {
+             min-width: 165px;
+             max-width: 165px;
+         }
+     }
+ }
+
+ @media screen and (max-width:770px) {}

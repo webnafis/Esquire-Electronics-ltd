@@ -1,6 +1,7 @@
-.container {
+.container-blogs {
     padding: 6px 0px;
     min-width: 100%;
+    max-width: 100%;
     // position: relative;
     // width: 100%;
     height: 100%;
@@ -8,20 +9,85 @@
     // transition-property: transform;
     display: flex;
     align-items: center;
-    // justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
 
-    .card {
-        width: 373.33px;
+    .swiper-container-blogs {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .first,
+    .last {
+        cursor: pointer;
+        position: absolute;
+        // border: 1px solid black;
+        border-radius: 50%;
+        top: calc(50% - 0px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // box-shadow: 4px 4px 15px 4px rgba(134, 134, 134, 0.2);
+        background-color: #fff;
+        width: 45px;
+        height: 45px;
+        transform: translateY(-50%);
+        z-index: 660;
+        //   border-radius: 50%;
+        transition: all .3s linear;
+        opacity: 1;
+        transition: 0.5s ease-in-out;
+        box-shadow: 0 15px 35px #0000001a;
+        text-shadow: 2px 3px 8px rgba(0, 0, 0, .1);
+
+        svg {
+            transition: all .3s linear;
+            stroke: #c92127;
+            fill: #c92127;
+            width: 25px;
+            height: 25px;
+        }
+
+        &:hover {
+            background-color: #B60201;
+
+            svg {
+                stroke: #fff;
+                fill: #fff;
+            }
+        }
+
+        &[aria-disabled="true"] {
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.5s ease-in-out;
+        }
+    }
+
+    .first {
+        right: 10px;
+    }
+
+    .last {
+        left: 10px;
+        // background-color: #2c2c2c;
+    }
+
+    .card-blogs {
+        max-width: 373.33px;
+        min-width: 373.33px;
         padding: 10px 0px 35px;
-        margin-right: 30px;
+        // margin-right: 30px;
         // transform: translateZ(0);
         flex-shrink: 0;
         height: 100%;
         // transition-property: transform;
-        // position: relative;
+        position: relative;
 
         .sub-card-con {
             max-width: 100%;
+            min-width: 100%;
             max-height: fit-content;
             box-shadow: 0px 3px 4px 1px rgba(187, 187, 187, 0.514);
             border-radius: 8px;
@@ -176,14 +242,24 @@
 
 
 @media screen and (max-width:1200px) {
-    .container {
-        .card {
+
+    .container-blogs {
+        .card-blogs {
             max-width: 300px;
+            min-width: 300px;
+
         }
     }
-
 }
 
-@media screen and (max-width:990px) {}
+@media screen and (max-width:990px) {
+    .container-blogs {
+        .card-blogs {
+            max-width: 345px;
+            min-width: 345px;
+
+        }
+    }
+}
 
 @media screen and (max-width:770px) {}

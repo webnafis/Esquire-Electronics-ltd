@@ -31,6 +31,7 @@
 
                 h3 {
                     font-size: 20px;
+                    white-space: nowrap;
                 }
 
                 .show-time {
@@ -112,6 +113,11 @@
             min-width: calc(16.66666% - 8.33333px);
             max-width: calc(16.66666% - 8.33333px);
             position: relative;
+            transition: all .5s ease;
+
+            &:hover {
+                box-shadow: 0 0 10px #77373262;
+            }
         }
     }
 }
@@ -130,6 +136,27 @@
 
 }
 
-@media screen and (max-width:990px) {}
+@media screen and (max-width:990px) {
+    // .container {
+    //     .title-area {
+    //         .title-timer {
+    //             .timer-container {
+    //                 h3 {
+
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    .container {
+        .container-products {
+            .products-card {
+                flex: 1 1 calc(25% - 7.5px);
+                min-width: calc(25% - 7.5px);
+                max-width: calc(25% - 7.5px);
+            }
+        }
+    }
+}
 
 @media screen and (max-width:770px) {}

@@ -117,9 +117,13 @@
 }
 
 @media screen and (max-width:990px) {
-    // .sub-container {
-    //     max-width: 720px;
-    // }
+    .container-videos {
+        .card-video {
+            flex: 1 1 calc(33.3333% - 13.333px);
+            min-width: calc(33.3333% - 13.333px);
+            max-width: calc(33.3333% - 13.333px);
+        }
+    }
 }
 
 @media screen and (max-width:770px) {

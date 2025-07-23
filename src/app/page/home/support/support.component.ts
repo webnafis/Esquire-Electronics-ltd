@@ -38,7 +38,7 @@ export class SupportComponent implements AfterViewInit {
       breakpoints: {
         // 320: { slidesPerView: 1, spaceBetween: 10 },
         // 640: { slidesPerView: 2, spaceBetween: 15 },
-        // 770: { slidesPerView: 3, spaceBetween: 20 },
+        770: { slidesPerView: 3, spaceBetween: 10 },
         990: { slidesPerView: 5, spaceBetween: 10 },
         1200: { slidesPerView: 6, spaceBetween: 10 }
       },

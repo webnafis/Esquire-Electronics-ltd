@@ -270,6 +270,16 @@
     }
 }
 
+@media screen and (max-width:850px) {
+    .sub-container {
+        .second-section {
+            .app {
+                display: none;
+            }
+        }
+    }
+}
+
 @media screen and (max-width:770px) {
     .sub-container {
         .first-section {

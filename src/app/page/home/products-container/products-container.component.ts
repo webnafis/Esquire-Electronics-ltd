@@ -39,6 +39,13 @@ export class ProductsContainerComponent implements AfterViewInit {
         nextEl: `.first-${this.swiperId}`,
         prevEl: `.last-${this.swiperId}`,
       },
+      breakpoints: {
+        // 320: { slidesPerView: 1, spaceBetween: 10 },
+        // 640: { slidesPerView: 2, spaceBetween: 15 },
+        770: { slidesPerView: 3, spaceBetween: 5 },
+        990: { slidesPerView: 4, spaceBetween: 5 },
+        // 1200: { slidesPerView: 4, spaceBetween: 5 }
+      },
       on: {
         init() {
           // Additional initialization if needed
