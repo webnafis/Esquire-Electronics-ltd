@@ -35,6 +35,13 @@ export class SupportComponent implements AfterViewInit {
         nextEl: `.first-support`,
         prevEl: `.last-support`,
       },
+      breakpoints: {
+        // 320: { slidesPerView: 1, spaceBetween: 10 },
+        // 640: { slidesPerView: 2, spaceBetween: 15 },
+        // 770: { slidesPerView: 3, spaceBetween: 20 },
+        // 990: { slidesPerView: 4, spaceBetween: 25 },
+        // 1200: { slidesPerView: 4, spaceBetween: 20 }
+      },
       on: {
         init() {
           // Additional initialization if needed

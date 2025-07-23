@@ -1,5 +1,6 @@
 .container-products {
-    max-width: 925.11px;
+    min-width: 100%;
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -8,8 +9,9 @@
     position: relative;
 
     .swiper-container-products {
-        max-width: 925.11px;
-
+        min-width: 100%;
+        max-width: 100%;
+        // position: relative;
     }
 
     .first,
@@ -92,6 +94,7 @@
         transition: all .5s ease;
 
         margin: 10px 0px;
+        position: relative;
 
         &:hover {
             box-shadow: 0 0 10px #77373262;

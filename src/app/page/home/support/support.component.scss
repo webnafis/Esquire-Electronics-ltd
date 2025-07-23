@@ -1,6 +1,6 @@
 .container-products-support {
-    min-width: 1180px;
-    max-width: 1180px;
+    min-width: 100%;
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -73,7 +73,8 @@
     .products-card {
         flex: 1 1 calc(16.66666% - 8.33333px);
         min-width: calc(16.66666% - 8.33333px);
-        max-width: 188.33px;
+        max-width: calc(16.66666% - 8.33333px);
+        position: relative;
 
     }
 }

@@ -14,11 +14,15 @@
 .sub-container {
     max-width: 1180px;
     margin: auto;
+    position: relative;
 
 
 }
 
 .category-con {
+    position: relative;
+    min-width: 100%;
+    max-width: 100%;
     margin-top: 20px;
     padding: 5px 0px;
 }

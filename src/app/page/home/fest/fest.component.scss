@@ -1,6 +1,9 @@
 .container {
     padding: 5px 0px;
     margin-top: 20px;
+    max-width: 100%;
+    min-width: 100%;
+    position: relative;
 
     .title-area {
         min-width: 100%;
@@ -94,18 +97,21 @@
 
     .container-products {
         min-width: 100%;
+        max-width: 100%;
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: flex-start;
         gap: 10px;
+        flex-wrap: wrap;
         margin-top: 10px;
         padding: 10px 0px;
 
         .products-card {
             flex: 1 1 calc(16.66666% - 8.33333px);
+            min-width: calc(16.66666% - 8.33333px);
             max-width: calc(16.66666% - 8.33333px);
-
-
+            position: relative;
         }
     }
 }

@@ -1,5 +1,7 @@
 .card {
     min-width: 100%;
+    max-width: 100%;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,6 +63,8 @@ img {
     justify-content: space-between;
     flex-direction: column;
     min-width: 100%;
+    max-width: 100%;
+    position: relative;
     min-height: 152px;
     padding: 5px 8px 12px;
 

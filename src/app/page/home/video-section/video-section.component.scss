@@ -1,15 +1,80 @@
-.container {
+.container-videos {
+    min-width: 100%;
+    max-width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 20px;
     padding-top: 5px;
     padding-bottom: 15px;
+    position: relative;
 
-    .card {
-        flex: 1 1 calc(20% - 8px);
-        min-width: calc(20% - 8px);
-        max-width: calc(20% - 8px);
+    .swiper-container-video {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .first,
+    .last {
+        cursor: pointer;
+        position: absolute;
+        // border: 1px solid black;
+        border-radius: 50%;
+        top: calc(50% - 0px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // box-shadow: 4px 4px 15px 4px rgba(134, 134, 134, 0.2);
+        background-color: #fff;
+        width: 45px;
+        height: 45px;
+        transform: translateY(-50%);
+        z-index: 660;
+        //   border-radius: 50%;
+        transition: all .3s linear;
+        opacity: 1;
+        transition: 0.5s ease-in-out;
+        box-shadow: 0 15px 35px #0000001a;
+        text-shadow: 2px 3px 8px rgba(0, 0, 0, .1);
+
+        svg {
+            transition: all .3s linear;
+            stroke: #c92127;
+            fill: #c92127;
+            width: 25px;
+            height: 25px;
+        }
+
+        &:hover {
+            background-color: #B60201;
+
+            svg {
+                stroke: #fff;
+                fill: #fff;
+            }
+        }
+
+        &[aria-disabled="true"] {
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.5s ease-in-out;
+        }
+    }
+
+    .first {
+        right: 10px;
+    }
+
+    .last {
+        left: 10px;
+        // background-color: #2c2c2c;
+    }
+
+
+    .card-video {
+        flex: 1 1 calc(20% - 16px);
+        min-width: calc(20% - 16px);
+        max-width: calc(20% - 16px);
         height: auto;
         position: relative;
         // overflow: hidden;
@@ -17,6 +82,7 @@
         .img {
             // display: block;
             width: 100%;
+            height: auto;
             border-radius: 8px;
             display: block;
             cursor: pointer;
@@ -36,3 +102,24 @@
         }
     }
 }
+
+// change these medias
+
+// @media screen and (max-width:1200px) {
+//     .sub-container {
+//         max-width: 942px;
+//     }
+
+// }
+
+// @media screen and (max-width:990px) {
+//     .sub-container {
+//         max-width: 700px;
+//     }
+// }
+
+// @media screen and (max-width:770px) {
+//     .sub-container {
+//         max-width: 520px;
+//     }
+// }

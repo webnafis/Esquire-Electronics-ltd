@@ -4,10 +4,14 @@
     justify-content: center;
     flex-direction: column;
     min-width: 100%;
+    max-width: 100%;
+    position: relative;
     gap: 5px;
 
     .second-container {
         min-width: 100%;
+        max-width: 100%;
+        position: relative;
         display: flex;
         align-items: flex-start;
         justify-content: center;
@@ -16,6 +20,7 @@
         .side-banner {
             flex: 1 1 calc(20% - 0px);
             min-width: calc(20% - 0px);
+            max-width: calc(20% - 0px);
             padding-bottom: 46px;
 
             img {
@@ -31,6 +36,8 @@
         .products-component-con {
             flex: 1 1 calc(80% - 20px);
             min-width: calc(80% - 20px);
+            max-width: calc(80% - 20px);
+            position: relative;
         }
 
     }
