@@ -16,6 +16,7 @@ import { ProductCardComponent } from "../../shared/product-card/product-card.com
 import { SupportComponent } from './support/support.component';
 import { VideoSectionComponent } from "./video-section/video-section.component";
 import { register as registerSwiperElement } from 'swiper/element/bundle';
+import { YoutubePopupComponent } from '../../shared/youtube-popup/youtube-popup.component';
 
 registerSwiperElement();
 
@@ -39,6 +40,7 @@ registerSwiperElement();
     CommonModule,
     HomeRoutingModule,
     ProductCardComponent,
+    YoutubePopupComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

@@ -12,17 +12,12 @@ export class BlogsContainerComponent implements AfterViewInit {
 
   ngAfterViewInit() {
 
-
-    // Register Swiper custom elements
-    // register();
-
-    // Initialize Swiper
     const swiperElBlog = document.querySelector(`#blogs`) as SwiperContainer;
     if (!swiperElBlog) return;
     const swiperParamsBlog: SwiperOptions = {
       loop: false,
-      slidesPerView: 3,
-      spaceBetween: 30,
+      slidesPerView: 1,
+      spaceBetween: 0,
       speed: 400, // Transition duration in ms (400-800 is smooth)
       effect: 'slide', // Use 'fade' for fade transitions
       // grabCursor: true,

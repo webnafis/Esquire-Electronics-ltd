@@ -16,8 +16,8 @@ export class FeaturesComponent implements AfterViewInit {
 
     const swiperParamsFeature: SwiperOptions = {
       // loop: tr,
-      slidesPerView: 6,
-      spaceBetween: 0,
+      slidesPerView: 3,
+      spaceBetween: 15,
       speed: 300,
       effect: 'slide',
       autoplay: {
@@ -25,8 +25,8 @@ export class FeaturesComponent implements AfterViewInit {
         disableOnInteraction: true,
       },
       breakpoints: {
-        // 320: { slidesPerView: 1, spaceBetween: 10 },
-        // 640: { slidesPerView: 2, spaceBetween: 15 },
+        300: { slidesPerView: 3, spaceBetween: 15 },
+        500: { slidesPerView: 4, spaceBetween: 15 },
         770: { slidesPerView: 4, spaceBetween: 15 },
         990: { slidesPerView: 6, spaceBetween: 0 },
         // 1200: { slidesPerView: 6, spaceBetween: 0 }

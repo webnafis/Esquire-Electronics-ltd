@@ -11,7 +11,8 @@
 
         <swiper-slide class="card-video" *ngFor="let video of videos; let i = index;">
             <img class="img" [src]="video.imgLink" alt="">
-            <img class="icon" src="https://www.esquireelectronicsltd.com/assets/images/brand/icon/play.svg" alt="">
+            <img (click)="openVideo(video.videoId)" class="icon"
+                src="https://www.esquireelectronicsltd.com/assets/images/brand/icon/play.svg" alt="">
         </swiper-slide>
     </swiper-container>
 
@@ -22,3 +23,5 @@
         </svg>
     </div>
 </div>
+<app-youtube-popup></app-youtube-popup>
+<!-- <button >Play Video</button> -->

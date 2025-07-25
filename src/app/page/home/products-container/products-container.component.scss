@@ -1,10 +1,6 @@
 .container-products {
     min-width: 100%;
     max-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 5px;
     margin-top: 10px;
     position: relative;
 
@@ -87,9 +83,6 @@
     // }
 
     .products-card {
-        flex: 1 1 calc(25% - 3.75px);
-        max-width: calc(25% - 3.75px);
-        min-width: calc(25% - 3.75px);
 
         transition: all .5s ease;
 
@@ -101,18 +94,3 @@
         }
     }
 }
-
-
-
-
-@media screen and (max-width:990px) {
-    .container-products {
-        .products-card {
-            flex: 1 1 calc(33.333% - 3.333px);
-            max-width: calc(33.333% - 3.333px);
-            min-width: calc(33.333% - 3.333px);
-        }
-    }
-}
-
-@media screen and (max-width:770px) {}

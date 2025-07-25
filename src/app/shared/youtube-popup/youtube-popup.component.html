@@ -1,0 +1,15 @@
+<div class="popup-overlay" *ngIf="isVisible" (click)="close()">
+    <div class="popup-content" (click)="$event.stopPropagation()">
+        <button class="close-button" (click)="close()">&times;</button>
+        <div class="video-container">
+            <!-- <iframe width="560" height="315" [src]="'https://www.youtube.com/watch?v=' + videoId" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe> -->
+            <iframe width="560" height="315" [src]="'https://www.youtube.com/embed/' + videoId | safeUrl "
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>

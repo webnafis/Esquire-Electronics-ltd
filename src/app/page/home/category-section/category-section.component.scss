@@ -40,7 +40,34 @@
             min-width: calc(80% - 20px);
             max-width: calc(80% - 20px);
             position: relative;
+            padding-bottom: 20px;
         }
 
     }
+}
+
+
+@media screen and (max-width:600px) {
+    .container {
+        .second-container {
+            // gap: 0px;
+            display: block;
+
+            .side-banner {
+                // background-color: black;
+                display: none;
+            }
+
+            .products-component-con {
+                // flex: 1 1 100%;
+                display: block;
+                min-width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+
+
+
+
 }

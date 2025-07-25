@@ -1,12 +1,8 @@
 .container-videos {
     min-width: 100%;
     max-width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 20px;
     padding-top: 5px;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     position: relative;
 
     .swiper-container-video {
@@ -72,10 +68,7 @@
 
 
     .card-video {
-        flex: 1 1 calc(20% - 16px);
-        min-width: calc(20% - 16px);
-        max-width: calc(20% - 16px);
-        height: auto;
+        // height: auto;
         position: relative;
         // overflow: hidden;
 
@@ -85,7 +78,7 @@
             height: auto;
             border-radius: 8px;
             display: block;
-            cursor: pointer;
+            // cursor: pointer;
             height: auto;
 
         }
@@ -97,37 +90,8 @@
             z-index: 100;
             top: calc(50% - 25px);
             left: calc(50% - 25px);
-
+            cursor: pointer;
             // border-radius: 50%;
         }
     }
-}
-
-// change these medias
-
-@media screen and (max-width:1200px) {
-    .container-videos {
-        .card-video {
-            flex: 1 1 calc(25% - 15px);
-            min-width: calc(25% - 15px);
-            max-width: calc(25% - 15px);
-        }
-    }
-
-}
-
-@media screen and (max-width:990px) {
-    .container-videos {
-        .card-video {
-            flex: 1 1 calc(33.3333% - 13.333px);
-            min-width: calc(33.3333% - 13.333px);
-            max-width: calc(33.3333% - 13.333px);
-        }
-    }
-}
-
-@media screen and (max-width:770px) {
-    // .sub-container {
-    //     max-width: 540px;
-    // }
 }

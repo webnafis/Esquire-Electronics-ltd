@@ -26,7 +26,7 @@ export class ProductsContainerComponent implements AfterViewInit {
     if (!swiperElproducts) return;
     const swiperParamsProducts: SwiperOptions = {
       loop: false,
-      slidesPerView: 4,
+      slidesPerView: 2,
       spaceBetween: 5,
       speed: 300, // Transition duration in ms (400-800 is smooth)
       effect: 'slide', // Use 'fade' for fade transitions
@@ -41,7 +41,7 @@ export class ProductsContainerComponent implements AfterViewInit {
       },
       breakpoints: {
         // 320: { slidesPerView: 1, spaceBetween: 10 },
-        // 640: { slidesPerView: 2, spaceBetween: 15 },
+        // 640: { slidesPerView: 2, spaceBetween: 5 },
         770: { slidesPerView: 3, spaceBetween: 5 },
         990: { slidesPerView: 4, spaceBetween: 5 },
         // 1200: { slidesPerView: 4, spaceBetween: 5 }

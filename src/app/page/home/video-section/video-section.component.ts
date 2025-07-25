@@ -1,6 +1,7 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, ViewChild } from '@angular/core';
 import { SwiperContainer } from 'swiper/element';
 import { SwiperOptions } from 'swiper/types';
+import { YoutubePopupComponent } from '../../../shared/youtube-popup/youtube-popup.component';
 
 @Component({
   selector: 'app-video-section',
@@ -12,37 +13,40 @@ export class VideoSectionComponent implements AfterViewInit {
     {
       name: "name",
       imgLink: "https://api.ecommerce.esquireelectronicsltd.com/api/upload/images/rh-d4e3.webp?resolution=220_270",
-      videoLink: "https://www.youtube.com/watch?v=lE0Bgazot7o"
-    },
-    {
-      name: "name",
-      imgLink: "https://api.ecommerce.esquireelectronicsltd.com/api/upload/images/eo-2477.webp?resolution=220_270",
-      videoLink: "https://www.youtube.com/watch?v=Lo1rP3L_6n0"
+      videoId: "aKUbA-QXgm0?si=5Qmuhx2v8N_IAfVd"
     },
     {
       name: "name",
       imgLink: "https://api.ecommerce.esquireelectronicsltd.com/api/upload/images/rh-d4e3.webp?resolution=220_270",
-      videoLink: "https://www.youtube.com/watch?v=lE0Bgazot7o"
-    },
-    {
+      videoId: "aKUbA-QXgm0?si=5Qmuhx2v8N_IAfVd"
+    }, {
       name: "name",
-      imgLink: "https://api.ecommerce.esquireelectronicsltd.com/api/upload/images/eo-2477.webp?resolution=220_270",
-      videoLink: "https://www.youtube.com/watch?v=Lo1rP3L_6n0"
-    },
-    {
+      imgLink: "https://api.ecommerce.esquireelectronicsltd.com/api/upload/images/rh-d4e3.webp?resolution=220_270",
+      videoId: "aKUbA-QXgm0?si=5Qmuhx2v8N_IAfVd"
+    }, {
       name: "name",
-      imgLink: "https://api.ecommerce.esquireelectronicsltd.com/api/upload/images/eo-2477.webp?resolution=220_270",
-      videoLink: "https://www.youtube.com/watch?v=Lo1rP3L_6n0"
-    },
-    {
+      imgLink: "https://api.ecommerce.esquireelectronicsltd.com/api/upload/images/rh-d4e3.webp?resolution=220_270",
+      videoId: "aKUbA-QXgm0?si=5Qmuhx2v8N_IAfVd"
+    }, {
       name: "name",
-      imgLink: "https://api.ecommerce.esquireelectronicsltd.com/api/upload/images/eo-2477.webp?resolution=220_270",
-      videoLink: "https://www.youtube.com/watch?v=Lo1rP3L_6n0"
-    },
-    {
+      imgLink: "https://api.ecommerce.esquireelectronicsltd.com/api/upload/images/rh-d4e3.webp?resolution=220_270",
+      videoId: "aKUbA-QXgm0?si=5Qmuhx2v8N_IAfVd"
+    }, {
       name: "name",
-      imgLink: "https://api.ecommerce.esquireelectronicsltd.com/api/upload/images/eo-2477.webp?resolution=220_270",
-      videoLink: "https://www.youtube.com/watch?v=Lo1rP3L_6n0"
+      imgLink: "https://api.ecommerce.esquireelectronicsltd.com/api/upload/images/rh-d4e3.webp?resolution=220_270",
+      videoId: "aKUbA-QXgm0?si=5Qmuhx2v8N_IAfVd"
+    }, {
+      name: "name",
+      imgLink: "https://api.ecommerce.esquireelectronicsltd.com/api/upload/images/rh-d4e3.webp?resolution=220_270",
+      videoId: "aKUbA-QXgm0?si=5Qmuhx2v8N_IAfVd"
+    }, {
+      name: "name",
+      imgLink: "https://api.ecommerce.esquireelectronicsltd.com/api/upload/images/rh-d4e3.webp?resolution=220_270",
+      videoId: "aKUbA-QXgm0?si=5Qmuhx2v8N_IAfVd"
+    }, {
+      name: "name",
+      imgLink: "https://api.ecommerce.esquireelectronicsltd.com/api/upload/images/rh-d4e3.webp?resolution=220_270",
+      videoId: "aKUbA-QXgm0?si=5Qmuhx2v8N_IAfVd"
     },
 
   ];
@@ -58,7 +62,7 @@ export class VideoSectionComponent implements AfterViewInit {
     if (!swiperElVideo) return;
     const swiperParamsVideo: SwiperOptions = {
       loop: false,
-      slidesPerView: 5,
+      slidesPerView: 2.5,
       spaceBetween: 20,
       speed: 600, // Transition duration in ms (400-800 is smooth)
       effect: 'slide', // Use 'fade' for fade transitions
@@ -72,8 +76,8 @@ export class VideoSectionComponent implements AfterViewInit {
         prevEl: `.last-video`,
       },
       breakpoints: {
-        // 320: { slidesPerView: 1, spaceBetween: 10 },
-        // 640: { slidesPerView: 2, spaceBetween: 15 },
+        // 320: { slidesPerView: 2.5, spaceBetween: 20 },
+        // 640: { slidesPerView: 2.5, spaceBetween: 20 },
         770: { slidesPerView: 3, spaceBetween: 20 },
         990: { slidesPerView: 4, spaceBetween: 20 },
         1200: { slidesPerView: 5, spaceBetween: 20 }
@@ -90,5 +94,10 @@ export class VideoSectionComponent implements AfterViewInit {
 
     // Initialize Swiper
     swiperElVideo.initialize();
+  }
+  @ViewChild(YoutubePopupComponent) youtubePopup!: YoutubePopupComponent;
+
+  public openVideo(videoId: string) {
+    this.youtubePopup.open(videoId);
   }
 }
