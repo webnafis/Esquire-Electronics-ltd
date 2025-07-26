@@ -6,8 +6,9 @@ import { PageComponent } from './page.component';
 import { HeaderComponent } from '../shared/header/header.component';
 import { FooterComponent } from '../shared/footer/footer.component';
 import { BackToTopComponent } from '../shared/back-to-top/back-to-top.component';
-import { CartButtonComponent } from '../shared/cart-button/cart-button.component';
+// import { CartButtonComponent } from '../shared/cart-button/cart-button.component';
 import { BottomNavberComponent } from '../shared/bottom-navber/bottom-navber.component';
+import { CartButtonPopupComponent } from "../shared/cart-button-popup/cart-button-popup.component";
 
 
 @NgModule({
@@ -18,8 +19,9 @@ import { BottomNavberComponent } from '../shared/bottom-navber/bottom-navber.com
     HeaderComponent,
     FooterComponent,
     BackToTopComponent,
-    CartButtonComponent,
-    BottomNavberComponent
+    // CartButtonComponent,
+    BottomNavberComponent,
+    CartButtonPopupComponent
   ]
 })
 export class PageModule { }
