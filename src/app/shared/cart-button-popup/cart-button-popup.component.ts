@@ -16,24 +16,38 @@ export class CartButtonPopupComponent {
     // Sample data - replace with your actual cart items
     {
       id: 1,
-      name: 'Product 1',
+      name: 'Product 1 Haier HSU-24IntelliCool (UVC',
       price: 29.99,
       quantity: 1,
-      image: 'path/to/image.jpg'
+      image: 'https://api.ecommerce.esquireelectronicsltd.com/api/upload/images/w020250413797128143844-1200-eb96.webp?resolution=1200_1200'
     },
     {
       id: 2,
-      name: 'Product 2',
+      name: 'Product 2 Haier HSU-24IntelliCool (UVC',
       price: 29.99,
       quantity: 1,
-      image: 'path/to/image.jpg'
+      image: 'https://api.ecommerce.esquireelectronicsltd.com/api/upload/images/w020250311577757343226-1200-10b11.webp?resolution=1200_1200'
     },
     {
       id: 3,
-      name: 'Product 3',
+      name: 'Product 3 Haier HSU-24IntelliCool (UVC',
       price: 29.99,
       quantity: 1,
-      image: 'path/to/image.jpg'
+      image: 'https://api.ecommerce.esquireelectronicsltd.com/api/upload/images/578tbg-1-33c10.webp?resolution=1632_2449'
+    },
+    {
+      id: 3,
+      name: 'Product 3 Haier HSU-24IntelliCool (UVC',
+      price: 29.99,
+      quantity: 1,
+      image: 'https://api.ecommerce.esquireelectronicsltd.com/api/upload/images/578tbg-1-33c10.webp?resolution=1632_2449'
+    },
+    {
+      id: 3,
+      name: 'Product 3 Haier HSU-24IntelliCool (UVC',
+      price: 29.99,
+      quantity: 1,
+      image: 'https://api.ecommerce.esquireelectronicsltd.com/api/upload/images/578tbg-1-33c10.webp?resolution=1632_2449'
     }
   ];
 
