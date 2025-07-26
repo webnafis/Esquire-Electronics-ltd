@@ -24,7 +24,7 @@
                     ট
                 </span>
                 {{product.price - (( product.discount?.flat || 0 ) + (( product.price *
-                (product.discount?.parcentage/100)) || 0 )) }}
+                (product.discount?.parcentage/100)) || 0 )) | number:'1.0-0' }}
             </div>
             <div class="icons">
                 <span>
@@ -52,10 +52,10 @@
         </div>
         <div class="price-before" *ngIf="product.discount.status === true ">
             <span>
-                ট{{product.price}}
+                ট{{product.price | number:'1.0-0' }}
             </span>
             <p>
-                -{{product.discount?.flat || (product.price * (product.discount?.parcentage/100))}}ট
+                -{{product.discount?.flat || (product.price * (product.discount?.parcentage/100)) | number:'1.0-0' }}ট
             </p>
         </div>
         <div class="ratings-sold">
