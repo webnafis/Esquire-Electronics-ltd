@@ -7,6 +7,7 @@ import { HeaderComponent } from '../shared/header/header.component';
 import { FooterComponent } from '../shared/footer/footer.component';
 import { BackToTopComponent } from '../shared/back-to-top/back-to-top.component';
 import { CartButtonComponent } from '../shared/cart-button/cart-button.component';
+import { BottomNavberComponent } from '../shared/bottom-navber/bottom-navber.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { CartButtonComponent } from '../shared/cart-button/cart-button.component
     FooterComponent,
     BackToTopComponent,
     CartButtonComponent,
+    BottomNavberComponent
   ]
 })
 export class PageModule { }
