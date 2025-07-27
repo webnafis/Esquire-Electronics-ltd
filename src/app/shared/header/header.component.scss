@@ -5,6 +5,13 @@
     }
 }
 
+// .dropdown-con{
+//         &.hidden {
+
+//         display: none;
+//     }
+// }
+
 .padding {
     min-width: 100%;
     padding-top: 133.5px;
@@ -122,6 +129,12 @@
                         background-color: rgba(0, 0, 0, .04);
                     }
                 }
+
+                &.hidden {
+
+                    display: none;
+                }
+
             }
 
             .show {

@@ -23,6 +23,8 @@
     position: relative;
     min-width: 100%;
     max-width: 100%;
+    min-height: 100%;
+    height: auto;
     margin-top: 20px;
     padding: 5px 0px;
 }
@@ -34,7 +36,7 @@
 
 .banner-flex {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: center;
     position: relative;
     gap: 20px;
@@ -50,6 +52,8 @@
     max-width: 24.15%;
     min-width: 24.15%;
     position: relative;
+    // height: auto;
+    min-height: 100%;
 }
 
 .banner-slider-con {
