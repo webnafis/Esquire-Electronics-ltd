@@ -23,7 +23,7 @@ const routes: Routes = [
         // data: { animation: 'HomePage' },
       },
     ]
-    }
+  }
 
 ];
 
